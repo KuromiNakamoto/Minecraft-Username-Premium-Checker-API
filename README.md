@@ -23,3 +23,27 @@ $.get(`https://web4.nankaji-dev.tk/api/checkmc/${username}`, function (data, sta
     }
 });
 ```
+
+Example curl (PHP) :
+
+```php
+$ch = curl_init();
+
+curl_setopt_array($ch, array(
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => "https://web4.nankaji-dev.tk/api/checkmc/$username",
+    CURLOPT_SSL_VERIFYPEER => false
+));
+
+$response = curl_exec($ch);
+
+$result = json_decode($response, true);
+
+curl_close($ch);
+
+if ($result['status'] == 200) {
+    // Is premium
+} else if ($result['status'] == 404) {
+    // Not premium
+}
+```
