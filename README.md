@@ -70,6 +70,15 @@ Status code : 404 (Not Premium Minecraft User)
 }
 ```
 
+Status code : 0 (Missing Information)
+
+```json
+{
+    "message": "MISSING_INFORMATION",
+    "status": 0
+}
+```
+
 ## Contact me
 
 Facebook : [`Facebook`](https://www.facebook.com/Nankaji.Minato/)
