@@ -47,3 +47,26 @@ if ($result['status'] == 200) {
     // Not premium
 }
 ```
+
+## Example JSON Response :
+
+Status code : 200 (Premium Minecraft User)
+
+```json
+{
+    "username": "Kuromi_Nakamoto",
+    "message": "This username is premium !",
+    "status": 200,
+    "uuid": "f8d0bc21808e4e57a17b806f8a0a948f"
+}
+```
+
+Status code : 404 (Not Premium Minecraft User)
+
+```json
+{
+    "message": "This username is not premium !",
+    "status": 404
+}
+```
+
